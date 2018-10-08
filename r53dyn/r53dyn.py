@@ -33,11 +33,6 @@ def main():
 
     init()
 
-    # on start always update our IP
-    ip = helpers.get_public_ip()
-    print(f"Public IP is {ip}")
-    # update ip
-
     while (True):
         record_name = os.environ['AWS_A_RECORD_NAME']
         zone_id = os.environ['AWS_HOSTED_ZONE_ID']
