@@ -29,13 +29,10 @@ docker exec -it [containerId] /bin/bash
 ```shell
 DOCKER_ID_USER=jonathont
 sudo docker login
-sudo docker tag r53-dyn $DOCKER_ID_USER/r53-dyn
-sudo docker push $DOCKER_ID_USER/r53-dyn
+sudo docker tag r53dyn $DOCKER_ID_USER/r53dyn
+sudo docker push $DOCKER_ID_USER/r53dyn
 ```
 
 ## Notes on using python
 
 * use CMD["python","-u","scriptname.py"], the -u allows us to see output
-* use a venv
-*   python3.6 -m venv r53-dyn
-*   source bin/activate
