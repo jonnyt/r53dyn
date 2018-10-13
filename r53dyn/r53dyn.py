@@ -9,6 +9,8 @@ working_path = os.path.dirname(os.path.abspath(__file__))
 
 def init():
 
+    print("Init: checking environment.")
+
     if 'AWS_A_RECORD_NAME' not in os.environ:
         raise EnvironmentError(
             "Environment variable AWS_A_RECORD_NAME is missing!")
@@ -32,6 +34,8 @@ def init():
 def main():
 
     init()
+
+    print("Starting.")
 
     while (True):
         record_name = os.environ['AWS_A_RECORD_NAME']
