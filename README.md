@@ -29,8 +29,8 @@ docker exec -it [containerId] /bin/bash
 ```shell
 DOCKER_ID_USER=jonathont
 sudo docker login
-sudo docker tag r53-dyn $DOCKER_ID_USER/r53-dyn
-sudo docker push $DOCKER_ID_USER/r53-dyn
+sudo docker tag r53dyn $DOCKER_ID_USER/r53dyn
+sudo docker push $DOCKER_ID_USER/r53dyn
 ```
 
 ## Notes on using python
