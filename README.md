@@ -36,6 +36,3 @@ sudo docker push $DOCKER_ID_USER/r53-dyn
 ## Notes on using python
 
 * use CMD["python","-u","scriptname.py"], the -u allows us to see output
-* use a venv
-*   python3.6 -m venv r53-dyn
-*   source bin/activate
