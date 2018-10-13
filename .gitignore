@@ -1,8 +1,5 @@
-bin/*
-include/*
-lib/*
-lib64/*
-lib64
+env/
 */__pycache__
 pyvenv.cfg
 .vscode/*
+set-env.sh

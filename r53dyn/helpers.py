@@ -3,14 +3,11 @@ import subprocess
 import re
 import os
 import json
-
+import requests
 
 def get_public_ip():
-    result = subprocess.run(['curl', '-s', 'http://checkip.dyndns.org/'],
-                            stdout=subprocess.PIPE).stdout.decode('utf-8')
-    m = re.search(r'^.*: ((\d+\.?)+)', result)
-    ip = m.group(1)
-    return ip
+    result = requests.get('https://api.ipify.org/')
+    return result.text
 
 
 def get_r53_a_record_val(zone_id, name):
