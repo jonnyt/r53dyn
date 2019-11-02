@@ -2,7 +2,7 @@
 
 Update AWS Route 53 A record based on current public IP.  Mostly an exercise for me to learn a little python and docker.
 
-Reguies the following environmental vars:
+Requires the following environmental vars:
 
 * AWS_ACCESS_KEY_ID
 * AWS_SECRET_ACCESS_KEY
